@@ -1,6 +1,4 @@
-# Take home interview - Store Monitoring
-
-This will be a take-home interview that tests real-life problem-solving ability, ability to build something from scratch and handle complex algorithmic problems. 
+Store Monitoring
 
 ## Problem statement
 
