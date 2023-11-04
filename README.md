@@ -23,12 +23,12 @@ We will have 3 sources of data
     2. This is used so that data sources 1 and 2 can be compared against each other. 
     3. Data can be found in CSV format [here](https://drive.google.com/file/d/101P9quxHoMZMZCVWQ5o-shonk2lgK1-o/view?usp=sharing)
 
-## System requirement
+## System format:
 
 - Do not assume that this data is static and precompute the answers as this data will keep getting updated every hour.
 - You need to store these CSVs into a relevant database and make API calls to get the data.
 
-## Data output requirement
+## Data output format:
 
 We want to output a report to the user that has the following schema
 
@@ -42,7 +42,7 @@ We want to output a report to the user that has the following schema
 
 Note: The data we have given is a static data set, so you can hard code the current timestamp to be the max timestamp among all the observations in the first CSV.  
 
-## API requirement
+## API format:
 
 1. You need two APIs 
     1. /trigger_report endpoint that will trigger report generation from the data provided (stored in DB)
@@ -56,20 +56,3 @@ Note: The data we have given is a static data set, so you can hard code the curr
             - if report generation is complete, return “Complete” along with the CSV file with the schema described above.
             
 
-## Considerations/Evaluation criteria
-
-1. The code should be well structured, handling corner cases, with good type systems. 
-2. The functionality should be correct for trigger + poll architecture, database reads and CSV output. 
-3. The logic for computing the hours overlap and uptime/downtime should be well documented and easy to read/understand. 
-4. The code should be as optimized as people and run within a reasonable amount of time. 
-
-You can use any Python framework to build this.
-
-## Submission instructions
-
-Send us the following in the same thread
-
-1. Github link to the repo
-2. Loom/any other screen-sharing video of a demo of the functionality 
-
-We will get back on the next steps.
